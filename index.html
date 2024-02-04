@@ -1,49 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEB MIAD</title>
 
     <!------- FAVICON   -------------------------->
     <link
-        rel="shortcut icon"
-        href="./assets/images/favicon.ico"
-        type="image/x-icon"
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
     />
 
     <!------- FONT FAMILY   -------------------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,600&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
 
     <!------- CSS   -------------------------->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body class="light-theme">
+    <!--==================== HEADER ====================-->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="/" class="logo">MiAD <span>DEV</span></a>
+
+          <div class="btn-group">
+            <button class="theme-btn theme-btn-mobile light">
+              <ion-icon name="moon" class="moon"></ion-icon>
+              <ion-icon name="sunny" class="sun"></ion-icon>
+            </button>
+
+            <button class="nav-menu-btn">
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="flex-wrapper">
+            <ul class="desktop-nav">
+              <li>
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">About Me</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+            <button class="theme-btn theme-btn-desktop light">
+              <ion-icon name="moon" class="moon"></ion-icon>
+              <ion-icon name="sunny" class="sun"></ion-icon>
+            </button>
+          </div>
+
+          <div class="mobile-nav">
+            <button class="nav-close-btn">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="wrapper">
+              <p class="h3 nav-title">Main Menu</p>
+              <ul>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="h3 nav-title">Topics</p>
+              <ul>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Database</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Accessibility</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Web Performance</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--==================== Hero ====================-->
+    <main>
+      <div class="hero">
+        <div class="left">
+          <h1 class="h1">Hi i'am <b>MiAD</b> <br />this my web site</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, fuga ipsam. Ullam numquam odit pariatur ea temporibus
+            libero tempore, minus illum, quia ipsa deserunt iste maiores
+            explicabo. Quae, voluptate cumque.
+          </p>
+
+          <div class="btn-group">
+            <a class="btn btn-primary" href="#">contact</a>
+            <a class="btn btn-secondary" href="#">about me</a>
+          </div>
+        </div>
+        <div class="right">
+          <img class="hero-img" alt="" src="./assets/images/about.png" />
+        </div>
+      </div>
+      <div class="main">
+        <div class="container">
+          <div class="blog">
+            <h2 class="h2">Latest Blog Post</h2>
+            <div class="blog-card-group">
+              <div class="blog-card">
+                <div class="blog-card-banner">
+                  <img src="./assets/images/blog-1.png" alt="" />
+                </div>
+                <div class="blog-contact-wrapper">
+                  <button class="blog-button">DateBase</button>
+                  <h3 class="h3">
+                    <a href="#" class="text"
+                      >Building microservices with Dropwizard, MongoDB &
+                      Docker</a
+                    >
+                  </h3>
+                  <p class="blog-text" style="display: none">
+                    This NoSQL database oriented to documents (by documents like
+                    JSON) combines some of the features from relational
+                    databases, easy to use and the multi-platform is the best
+                    option for scale up and have fault tolerance, load
+                    balancing, map reduce, etc.
+                  </p>
+                  <div class="profile">
+                    <div class="blog-profile-img">
+                      <img
+                        src="/assets/images/pattern.png"
+                        style="width: 50px; border-radius: 50px"
+                        alt=""
+                      />
+                    </div>
+                    <div class="blog-profile">
+                      <a href="#">Miad Jfr</a>
+                      <p class="time-profile">
+                        <time datetime="2022-01-17"> 01.jun.2017</time>
+                        <span class="separator"></span>
+                        <ion-icon name="time-outline"></ion-icon>
+                        <time datetime="PT3M">3 min</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button-loadmore">
+          <button class="load">loadmore</button>
+        </div>
+        </div>
+    </main>
 
 
-</head>
-<body>
+    <footer class="footer">
+        .
 
-
-
-
-
-
-
+    </footer>
 
     <!--=============== main script ===============-->
     <script src="./assets/js/script.js"></script>
 
     <!--=============== ionicon ===============-->
     <script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
-    </script>
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
     <script
-        nomodule=""
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
-    </script>
-</body>
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
